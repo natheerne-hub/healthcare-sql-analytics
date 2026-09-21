@@ -1,0 +1,8 @@
+department_name,inpatient_discharges,readmissions_within_30d,readmission_rate_pct
+General Surgery,151,39,25.8
+Orthopedics,137,34,24.8
+Emergency Medicine,123,26,21.1
+Endocrinology,115,24,20.9
+Internal Medicine,137,27,19.7
+Pulmonology,103,20,19.4
+Cardiology,125,18,14.4

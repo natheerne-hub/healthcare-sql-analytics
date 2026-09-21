@@ -1,0 +1,8 @@
+department_name,inpatient_stays,avg_los_days,max_los_days,avg_charge_usd
+Cardiology,125,3.69,9.0,18714.74
+Internal Medicine,137,3.6,9.0,18316.67
+Orthopedics,137,3.55,8.0,16757.1
+Endocrinology,115,3.52,10.0,18616.56
+Pulmonology,103,3.44,8.0,18009.93
+Emergency Medicine,123,3.43,8.0,17396.19
+General Surgery,151,3.38,8.0,18087.18
