@@ -1,0 +1,38 @@
+name: Validate SQL Analytics Pipeline
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  run-queries:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate synthetic database
+        run: python generate_synthetic_data.py --db healthcare.db --seed 42
+
+      - name: Run all analytical queries
+        run: python run_queries.py --db healthcare.db
+
+      - name: Verify result files were produced
+        run: |
+          count=$(ls results/*.csv | wc -l)
+          expected=$(ls queries/*.sql | wc -l)
+          echo "Found $count result files for $expected query files"
+          if [ "$count" -ne "$expected" ]; then
+            echo "Mismatch between queries and results" >&2
+            exit 1
+          fi
