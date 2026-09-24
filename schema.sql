@@ -1,6 +1,6 @@
 -- =====================================================================
 -- Healthcare SQL Analytics — Schema
--- Dr. Natheer Soliman, MD
+-- Dr. Nather Yunis Suliaman, MD
 --
 -- A small, normalized healthcare data warehouse schema representing
 -- patients, providers, departments, encounters, and diagnoses.
