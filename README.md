@@ -2,7 +2,7 @@
 
 [![Validate SQL Analytics Pipeline](https://github.com/natheerne-hub/healthcare-sql-analytics/actions/workflows/validate-sql.yml/badge.svg)](https://github.com/natheerne-hub/healthcare-sql-analytics/actions/workflows/validate-sql.yml)
 
-### Relational Schema Design + Analytical SQL | Dr. Natheer Soliman, MD
+### Relational Schema Design + Analytical SQL | Dr. Nather Yunis Suliaman, MD
 
 A small healthcare data warehouse — patients, providers, departments,
 encounters, and diagnoses — built to demonstrate relational schema design
@@ -136,7 +136,7 @@ results/                       CSV output of each query (reproducible via CI)
 
 ## Author
 
-**Dr. Natheer Soliman, MD**
+**Dr. Nather Yunis Suliaman, MD**
 Healthcare Data Analytics · Clinical Analytics · Health Informatics
 
 [GitHub Profile](https://github.com/natheerne-hub)
